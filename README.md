@@ -70,7 +70,7 @@ A web-based application for managing library operations, developed using Java, J
 - **UserRoles-3:** `(RoleID, RoleName, RoleDescription)`  
   - Primary Key: `RoleID`
 - **Inquiries-3:** `(InquiryID, MemberID, Name, Email, Message, InquiryDate)`  
-  - Primary Key: `InquiryID`, Foreign Key: `MemberID` (nullable)
+  - Primary Key: `InquiryID`, Foreign Key: `MemberID`
 - **Borrowings-3:** `(BorrowID, MemberID, ISBN, BorrowDate, ReturnDate)`  
   - Primary Key: `BorrowID`, Foreign Keys: `MemberID`, `ISBN`
 - **Books-3:** `(ISBN, Title, Author, Category, Status)`  
