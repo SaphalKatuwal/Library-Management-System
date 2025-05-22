@@ -1,0 +1,14 @@
+controller\LoginServlet.class
+controller\LibraryLoansServlet.class
+controller\BooksServlet.class
+controller\TestServlet.class
+filter\AuthFilter.class
+model\DBConnection.class
+controller\LogoutServlet.class
+model\Book.class
+model\PasswordUtil.class
+model\Borrow.class
+controller\RegisterServlet.class
+controller\HomeServlet.class
+model\User.class
+model\UserDAO.class

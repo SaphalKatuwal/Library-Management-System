@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <display-name>Library Management System</display-name>
+
+    <!-- Home Servlet -->
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>controller.HomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <!-- Test Servlet -->
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>controller.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <!-- Dashboard Servlet -->
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>controller.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Recent Activities Servlet -->
+    <servlet>
+        <servlet-name>RecentActivitiesServlet</servlet-name>
+        <servlet-class>controller.RecentActivitiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecentActivitiesServlet</servlet-name>
+        <url-pattern>/recent_activities</url-pattern>
+    </servlet-mapping>
+
+    <!-- Library Loans Servlet -->
+    <servlet>
+        <servlet-name>LibraryLoansServlet</servlet-name>
+        <servlet-class>controller.LibraryLoansServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LibraryLoansServlet</servlet-name>
+        <url-pattern>/library_loans</url-pattern>
+    </servlet-mapping>
+
+    <!-- Books Servlet -->
+    <servlet>
+        <servlet-name>BooksServlet</servlet-name>
+        <servlet-class>controller.BooksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BooksServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+
+    <!-- Members Servlet -->
+    <servlet>
+        <servlet-name>MembersServlet</servlet-name>
+        <servlet-class>controller.MembersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MembersServlet</servlet-name>
+        <url-pattern>/members</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
+</web-app>
